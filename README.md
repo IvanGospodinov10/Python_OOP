@@ -1,3 +1,3 @@
 # Python_OOP
 
-<img src="images/screenshot.png" width="400">
+<img src="images/Python%20OOP.png" width="400">
