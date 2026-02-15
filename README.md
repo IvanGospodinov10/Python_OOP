@@ -1,3 +1,3 @@
 # Python_OOP
 
-![Project Screenshot](images/Python OOP.png)
+<img src="images/screenshot.png" width="400">
