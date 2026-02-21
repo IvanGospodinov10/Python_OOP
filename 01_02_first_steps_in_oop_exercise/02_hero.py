@@ -8,6 +8,7 @@ class Hero:
         if self.health <= 0:
             self.health = 0
             return f"{self.name} was defeated"
+        return None
 
     def heal(self, heal: int):
         self.health += heal
