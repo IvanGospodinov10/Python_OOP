@@ -20,12 +20,15 @@ class Section:
         return f"Could not find task with the name {task_name}"
 
     def clean_section(self):
-        removed_tasks = 0
-        for t in self.tasks[:]:
-            if t.completed:
-                removed_tasks += 1
-                self.tasks.remove(t)
-        return f"Cleared {removed_tasks} tasks."
+        # removed_tasks = 0
+        # for t in self.tasks[:]:
+        #     if t.completed:
+        #         removed_tasks += 1
+        #         self.tasks.remove(t)
+        # return f"Cleared {removed_tasks} tasks."
+        curr_t_len = len(self.tasks)
+        self.tasks = [t for t in self.tasks if not t.completed]
+        return f"Cleared {curr_t_len - len(self.tasks)} tasks."
 
     def view_section(self):
         result = [f"Section {self.name}:"]
