@@ -10,7 +10,7 @@ class Shop:
         return cls(name, type, 10)
 
     def add_item(self, item_name: str):
-        if len(self.items) < self.capacity:
+        if sum(self.items.values()) < self.capacity:
             if item_name not in self.items:
                 self.items[item_name] = 0
             self.items[item_name] += 1
