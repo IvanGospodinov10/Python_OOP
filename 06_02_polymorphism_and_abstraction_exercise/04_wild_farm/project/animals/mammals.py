@@ -1,4 +1,4 @@
-from project.animals.animal import Mammal
+from project.animal.animal import Mammal
 from project.food import Food, Vegetable, Fruit, Meat
 
 
